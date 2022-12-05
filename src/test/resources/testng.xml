@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JIRA Test Suite" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="com.googleclassroom.listeners.ExtentReportListener"></listener>
+        <listener class-name="com.googleclassroom.listeners.TestResultsListener"></listener>
+    </listeners>
+    <test name="API Level 2">
+        <classes>
+            <class name="com.googleclassroom.tests.courses.TestCaseUserIsAbleCreateANewCourseSuccessful"></class>
+            <class name="com.googleclassroom.tests.courses.TestCaseUserIsNotAbleCreateANewCourseWithoutCourseName"></class>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->
